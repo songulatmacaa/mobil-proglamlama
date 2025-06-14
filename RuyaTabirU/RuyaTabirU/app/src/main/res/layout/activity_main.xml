@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/backgroundLight"
+    tools:context=".activity.MainActivity">
+
+    <!-- Favoriler ekranına geçiş -->
+    <Button
+        android:id="@+id/btnFavoriler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Favorilerim"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:backgroundTint="#800080"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Kendi Rüyanı Yaz ekranına geçiş -->
+    <Button
+        android:id="@+id/btnRuyaYaz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rüyamı Yaz"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:backgroundTint="#800080"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Geçmiş Rüyalar ekranına geçiş -->
+    <Button
+        android:id="@+id/btnGecmisRuyalar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Geçmiş Rüyalar"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:backgroundTint="#800080"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Google tarzı arama kutusu -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="6dp"
+            android:gravity="center_vertical">
+
+            <SearchView
+                android:id="@+id/kategoriSearchView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:queryHint="Kategori ara"
+                android:iconifiedByDefault="false"
+                android:background="@drawable/search_background"
+                android:textColor="@android:color/white"
+                android:queryBackground="@android:color/transparent" />
+
+            <ImageButton
+                android:id="@+id/btnAra"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_search_mor"
+                android:background="@android:color/transparent"
+                android:contentDescription="Ara"
+                android:padding="8dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Kategoriler RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/kategoriRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

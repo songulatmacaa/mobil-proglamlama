@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Uygulama Temel Renkleri -->
+    <color name="colorPrimary">#4A148C</color>         <!-- Ana mor ton -->
+    <color name="colorPrimaryDark">#12005E</color>     <!-- Koyu mor ton -->
+    <color name="colorAccent">#FFD600</color>          <!-- Sarı vurgu rengi -->
+
+    <!-- Arka Plan ve Yazı Renkleri -->
+    <color name="backgroundLight">#FFFFFF</color>      <!-- Açık arka plan -->
+    <color name="textDark">#212121</color>             <!-- Koyu yazı -->
+    <color name="textLight">#757575</color>            <!-- Açık gri yazı -->
+
+    <!-- Sık kullanılan sabit renkler -->
+    <color name="white">#FFFFFF</color>                <!-- Beyaz renk -->
+    <color name="black">#000000</color>                <!-- Siyah renk -->
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <!-- Boş liste mesajı en üste yerleştirildi ama görünmüyor -->
+    <TextView
+        android:id="@+id/bosFavoriMesaji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Henüz favori eklenmemiş."
+        android:textSize="18sp"
+        android:textColor="#888888"
+        android:textStyle="italic"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:gravity="center" />
+
+    <!-- Liste en altta yer alır -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/favoriRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
